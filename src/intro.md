@@ -1,9 +1,8 @@
 ---
-icon: circle-info
 cover: /assets/images/000922FQkgG.jpg
 article: false
 ---
 
-# Intro Page
+# 关于我
 
-None
+暂无

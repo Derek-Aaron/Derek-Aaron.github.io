@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://derek-aaron.github.io",
     email: "2488288090@qq.com"
   },
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "//at.alicdn.com/t/c/font_4757467_cks97uikom6.css",
   logo: "/logo.svg",
   favicon: "/logo.svg",
   repo: "https://github.com/Derek-Aaron/Derek-Aaron.github.io",
@@ -30,8 +30,8 @@ export default hopeTheme({
       footer: "zdx 博客",
       displayFooter: true,
       blog: {
-        description: "一个热情的全栈开发～～～",
-        intro: "/zh/intro.html",
+        description: "一个热情开放的全栈开发～～～",
+        intro: "/intro.html",
       },
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
