@@ -1,8 +1,8 @@
 ---
 icon: circle-info
-cover: /assets/images/cover3.jpg
+cover: /assets/images/000922FQkgG.jpg
 ---
 
 # Intro Page
 
-Place your introduction and profile here.
+None
