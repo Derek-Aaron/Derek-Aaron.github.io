@@ -4,7 +4,6 @@ import { defaultNavbar, } from "./navbar/index.js";
 import { defaultSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  logoDark: "",
   hostname: "https://derek-aaron.github.io",
   author: {
     name: "derek-aaron",
@@ -30,6 +29,7 @@ export default hopeTheme({
       footer: "zdx 博客",
       displayFooter: true,
       blog: {
+        avatar: '/assets/images/default.jpg',
         description: "一个热情开放的全栈开发～～～",
         intro: "/intro.html",
       },

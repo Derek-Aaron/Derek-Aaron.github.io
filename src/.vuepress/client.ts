@@ -3,7 +3,7 @@ import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentN
 import { setupRunningTimeFooter } from "vuepress-theme-hope/presets/footerRunningTime.js";
 import {onMounted} from "vue";
 import {clickEffect} from "./utils/fireworks.js";
-
+import "vuepress-theme-hope/presets/round-blogger-avatar.scss"
 export default defineClientConfig({
 	setup() {
 		onMounted(() => {
