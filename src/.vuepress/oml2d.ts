@@ -2,6 +2,7 @@ import { Options } from 'oh-my-live2d';
 
 
 const options: Options = {
+	mobileDisplay: false,
 	models: [
 		{
 			"path": "https://model.oml2d.com/HK416-1-normal/model.json",

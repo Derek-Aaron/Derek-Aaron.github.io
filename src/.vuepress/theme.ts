@@ -1,27 +1,21 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { defaultNavbar, } from "./navbar/index.js";
+import { defaultSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
+  logoDark: "",
   hostname: "https://derek-aaron.github.io",
-
   author: {
     name: "derek-aaron",
     url: "https://derek-aaron.github.io",
     email: "2488288090@qq.com"
   },
-
   iconAssets: "fontawesome-with-brands",
-
   logo: "/logo.svg",
-
   favicon: "/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
+  repo: "https://github.com/Derek-Aaron/Derek-Aaron.github.io",
   docsDir: "src",
-
   blog: {
     medias: {
       Github: "https://github.com/Derek-Aaron",
@@ -29,68 +23,35 @@ export default hopeTheme({
       Qq: "https://wpa.qq.com/msgrd?v=3&uin=2488288090&site=qq&menu=yes"
     },
   },
-
   locales: {
     "/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Default footer",
-
+      navbar: defaultNavbar,
+      sidebar: defaultSidebar,
+      footer: "zdx 博客",
       displayFooter: true,
-
-      blog: {
-        description: "A FrontEnd programmer",
-        intro: "/intro.html",
-      },
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-
-    /**
-     * Chinese locale config
-     */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
       blog: {
         description: "一个热情的全栈开发～～～",
         intro: "/zh/intro.html",
       },
-
-      // page meta
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
       },
     },
   },
 
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
-    },
-  },
-
-  // enable it to preview all changes in time
-  // hotReload: true,
-
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": ["1234"],
+  //     "/zh/demo/encrypt.html": ["1234"],
+  //   },
+  // },
+  hotReload: true,
   plugins: {
+    searchPro: {
+      indexContent: true,
+      autoSuggestions: true,
+    },
     blog: true,
-
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
@@ -98,7 +59,6 @@ export default hopeTheme({
     //   provider: "Waline",
     //   serverURL: "https://waline-comment.vuejs.press",
     // },
-
     components: {
       components: ["Badge", "VPCard"],
     },
@@ -232,10 +192,12 @@ export default hopeTheme({
     //     ],
     //   },
     // },
-
     // install @vuepress/plugin-revealjs and uncomment these if you need slides
     // revealjs: {
     //   plugins: ["highlight", "math", "search", "notes", "zoom"],
     // },
-  },
+  }
+}, {
+  check: true,
+  custom: true,
 });

@@ -10,11 +10,6 @@ export default defineUserConfig({
 
   locales: {
     "/": {
-      lang: "en-US",
-      title: "zdx blog",
-      description: "A blog for zdx",
-    },
-    "/zh/": {
       lang: "zh-CN",
       title: "zdx 博客",
       description: "zdx的博客",
