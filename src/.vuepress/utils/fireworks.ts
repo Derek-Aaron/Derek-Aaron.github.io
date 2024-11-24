@@ -1,4 +1,4 @@
-function clickEffect() {
+export function clickEffect() {
 	let balls = [];
 	let longPressed = false;
 	let longPress;
@@ -138,4 +138,3 @@ function clickEffect() {
 		}
 	}
 }
-clickEffect();//调用特效函数
